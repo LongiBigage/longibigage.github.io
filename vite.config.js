@@ -6,6 +6,6 @@ export default defineConfig({
   publicPath: process.env.NODE_ENV === 'production'
     ? '/longibigage.github.io/'
     : '/',
-  base: "./",
+  base: "/longibigage.github.io/",
   plugins: [vue()]
 })
