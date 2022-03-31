@@ -10,7 +10,7 @@ module.exports = {
             }
         }
     },
-    darkMode: false,
+    darkMode: true,
     theme: {
         fontFamily: {
             header: ['Raleway', "sans-serif"],
