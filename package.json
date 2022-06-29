@@ -1,29 +1,22 @@
 {
-    "name": "atom-html",
-    "version": "1.0.0",
-    "author": "Tailwind Made",
-    "private": true,
-    "scripts": {
-        "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
-        "server-reload": "browser-sync start --config './browser-sync-config.js'",
-        "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
-        "build": "npm run css -- --env 'production'"
-    },
-    "browserslist": [
-        "last 2 versions",
-        "> 1%"
-    ],
-    "dependencies": {
-        "@tailwindcss/aspect-ratio": "^0.2.0",
-        "cssnano": "^5.0.1",
-        "@tailwindcss/forms": "^0.3.2",
-        "@tailwindcss/typography": "^0.4.0",
-        "autoprefixer": "^10.2.5",
-        "browser-sync": "^2.26.14",
-        "concurrently": "^6.0.2",
-        "postcss": "^8.2.10",
-        "postcss-cli": "^8.3.1",
-        "postcss-nested": "^5.0.5",
-        "tailwindcss": "^2.1.1"
-    }
+  "name": "tailwind-css-starter-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
+    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
+    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0"
+  }
 }
