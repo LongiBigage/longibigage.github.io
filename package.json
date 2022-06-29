@@ -1,12 +1,12 @@
 {
-  "name": "tailwind-css-starter-postcss",
+  "name": "longi-bigage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
-    "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
-    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
+    "build": "postcss ./src/styles.css -o ./docs/dist/styles.css",
+    "watch": "onchange 'tailwind.config.js' './docs/**/*.html' './src/**/*.css' -- npm run build",
+    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./docs/dist/styles.css"
   },
   "keywords": [],
   "author": "",
