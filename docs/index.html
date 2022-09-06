@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LongiBigage</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>&#x1F608;</text></svg>">
   <link rel="stylesheet" href="dist/styles.css" />
   <script src="dist/script.js"></script>
 </head>
@@ -13,26 +14,29 @@
   <!-- Navigation -->
   <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
     <div class="flex items-center">
-      <img src='dist/assets/Logo_black.svg' alt="Logo" class="h-4" />
+      <!-- <img src='dist/assets/Logo_black.svg' alt="Logo" class="h-4" /> -->
+      <span class="subpixel-antialiased font-semibold tracking-wide"><span class="text-xs">&#x1F608;</span>LongiBigage</span>
     </div>
     <ul class="font-montserrat items-center hidden md:flex">
       <li class="mx-3 ">
-        <a class="growing-underline" href="howitworks">
+        <a class="growing-underline" href="#what-i-do">
           What I do
         </a>
       </li>
       <li class="growing-underline mx-3">
-        <a href="features">What I've done</a>
+        <a href="#projects">What I've done</a>
       </li>
       <li class="growing-underline mx-3">
-        <a href="pricing">Pricing</a>
+        <a href="#pricing">Pricing</a>
       </li>
     </ul>
     <div class="font-montserrat hidden md:block">
-      <button class="mr-6">say hi</button>
-      <button class="py-2 px-4 text-white bg-black rounded-3xl">
+      <a href= "mailto:longinobigage@live.com?Subject = Hi!"
+       class="mr-6 capitalize">say hi</a>
+      <a href="./LongiBigage.pdf" download="LonginoBigage.pdf" 
+      class="py-2 px-4 text-white bg-black rounded-full">
         Get my CV
-      </button>
+      </a>
     </div>
     <div id="showMenu" class="md:hidden">
       <img src='dist/assets/logos/Menu.svg' alt="Menu icon" />
@@ -44,13 +48,13 @@
     </div>
     <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
       <li class="my-6">
-        <a href="howitworks">What I do</a>
+        <a href="#what-i-do">What I do</a>
       </li>
       <li class="my-6">
-        <a href="features">What I've done</a>
+        <a href="#projects">What I've done</a>
       </li>
       <li class="my-6">
-        <a href="pricing">Pricing</a>
+        <a href="#pricing">Pricing</a>
       </li>
     </ul>
   </div>
@@ -66,23 +70,26 @@
         </span>
       </h1>
       <p class="font-pt-serif font-normal mb-7">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
-        tempore consectetur voluptas, cumque nobis laboriosam voluptatem.
+        I like building things, and making the world a better place through tech....and solving problems because,
+        <q>To live life you need problems, if you get everything you want the minute you want it, what's the point of living?</q> 
+        <br><i>Jake From Adventure Times</i>
       </p>
       <div class="font-montserrat">
-        <button class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
+        <a href= "mailto:longinobigage@live.com?Subject = Hi!"
+        class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
           Say Hey
-        </button>
-        <button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
-          My CV
-        </button>
+        </a>
+        <a href="./LongiBigage.pdf" download="LonginoBigage.pdf"
+        class="px-6 py-4 border-2 border-black border-solid rounded-lg capitalize">
+          get my CV
+        </a>
       </div>
     </div>
     <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
       <div class="relative">
         <img src='dist/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10" />
       </div>
-      <img src='dist/assets/MacBook Pro.png' alt="Macbook" />
+      <img src='dist/assets/longi-hero.png' alt="longi-hero" class="object-scale-down h-58 w-96" />
       <div class="relative">
         <img src='dist/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6" />
       </div>
@@ -90,7 +97,7 @@
   </section>
 
   <!-- How it works -->
-  <section class="bg-black text-white sectionSize">
+  <section class="bg-black text-white sectionSize" id="what-i-do">
     <div>
       <h2 class="secondaryTitle bg-underline2 bg-100%">What I do</h2>
     </div>
@@ -125,8 +132,8 @@
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="sectionSize bg-secondary">
+  <!-- projects -->
+  <section class="sectionSize bg-secondary" id="projects">
     <div>
       <h2 class="secondaryTitle bg-underline3 bg-100%">What I've done</h2>
     </div>
@@ -135,12 +142,9 @@
       <div class="flex items-start font-montserrat my-6 mr-10">
         <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
         <div>
-          <h3 class="font-semibold text-2xl">Membastores</h3>
+          <a href="https://membastores.co.tz/index.html" target="_blank" class=""><h3 class="font-semibold text-2xl">Membastores</h3></a>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
-            culpa consequuntur saepe quibusdam labore, est ex ducimus
-            tempore, quos illum officiis, pariatur ea placeat.
+            Membastores helps customers access awesome products from Tanzanian local market and get the right products from our vast catalogue. We put on time delivery as our core value. We deliver right on time.
           </p>
         </div>
       </div>
@@ -188,7 +192,7 @@
   </section>
 
   <!-- Pricing -->
-  <section class="sectionSize bg-secondary py-0">
+  <section class="sectionSize bg-secondary py-0" id="pricing">
     <div>
       <h2 class="secondaryTitle bg-underline4 mb-0 bg-100%">Pricing</h2>
     </div>
@@ -253,7 +257,7 @@
           The Ugly
         </h3>
         <div class="font-montserrat font-bold text-2xl mb-4">
-          $5000
+          $6500
           <span class="font-normal text-base"> / Project</span>
         </div>
 
@@ -289,12 +293,12 @@
     <div toggleElement class="w-full py-4">
       <div class="flex justify-between items-center">
         <div question class="font-montserrat font-medium mr-auto">
-          Where can I work?
+          Where do I work?
         </div>
         <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
       </div>
       <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
-        In the internet & Somewhere in Dar es Salaam.
+        On the internet & Somewhere in Dar es Salaam.
       </div>
     </div>
     <hr class="w-full bg-white" />
@@ -330,24 +334,19 @@
   <!-- Footer -->
   <section class="bg-black sectionSize">
     <div class="mb-4">
-      <img src='dist/assets/Logo_white.svg' alt="Logo" class="h-4" />
+      <!-- <img src='dist/assets/Logo_white.svg' alt="Logo" class="h-4" /> -->
+      <span class="subpixel-antialiased font-semibold tracking-wide text-white"><span class="text-xs">&#x1F608;</span>LongiBigage</span>    
     </div>
     <div class="flex mb-8">
       <a href="#">
-        <img src='dist/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
-      </a>
-      <a href="#">
-        <img src='dist/assets/logos/Youtube.svg' alt="Youtube logo" class="mx-4" />
-      </a>
-      <a href="#">
         <img src='dist/assets/logos/Instagram.svg' alt="Instagram logo" class="mx-4" />
       </a>
-      <a href="#">
+      <a href="https://twitter.com/LongiBigage" target="_blank">
         <img src='dist/assets/logos/Twitter.svg' alt="Twitter logo" class="mx-4" />
       </a>
     </div>
     <div class="text-white font-montserrat text-sm">
-      © 2021 LongiBigage. All rights reserved
+      © 2022 All rights reserved
     </div>
   </section>
 </body>
